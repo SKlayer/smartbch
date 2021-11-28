@@ -65,3 +65,11 @@ cd $BUILDDIR/smart_bch
 git clone --depth 1 https://github.com/smartbch/smartbch
 cd smartbch
 go build -tags cppbtree github.com/smartbch/smartbch/cmd/smartbchd
+
+
+mv $BUILDDIR/smart_bch/smartbch/smartbchd $FINDIR/
+mv $BUILDDIR/rocksdb-5.18.4/librocksdb.so.5.18.4 $FINDIR/
+mv $BUILDDIR/smart_bch/moeingevm/evmwrap/host_bridge/libevmwrap.so $FINDIR/
+rm -rf $BUILDDIR
+
+
