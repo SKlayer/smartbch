@@ -8,10 +8,13 @@ mkdir ./smartbch_out/
 export BUILDDIR=~/smartbch_build
 export FINDIR=~/smartbch_out
 
-sudo apt install gcc-8 g++-8
-sudo apt install libgflags-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev
-sudo apt install libsnappy-dev
 
+sudo apt install make cmake git -y
+sudo apt install gcc-8 g++-8 -y
+sudo apt install libgflags-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev -y
+sudo apt install libsnappy-dev -y
+
+cd $BUILDDIR
 wget https://golang.org/dl/go1.16.5.linux-amd64.tar.gz
 tar zxvf go1.16.5.linux-amd64.tar.gz
 
