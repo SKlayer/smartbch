@@ -8,10 +8,10 @@ mkdir ./smartbch_out/
 export BUILDDIR=~/smartbch_build
 export FINDIR=~/smartbch_out
 
-
+sudo apt update
 sudo apt install make cmake git -y
-sudo apt install gcc-8 g++-8 -y
-sudo apt install libgflags-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev -y
+sudo apt install gcc-8 g++-8 build-essential -y
+sudo apt install libgflags-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev libstdc++-8-dev -y
 sudo apt install libsnappy-dev -y
 
 cd $BUILDDIR
@@ -70,6 +70,6 @@ go build -tags cppbtree github.com/smartbch/smartbch/cmd/smartbchd
 mv $BUILDDIR/smart_bch/smartbch/smartbchd $FINDIR/
 mv $BUILDDIR/rocksdb-5.18.4/librocksdb.so.5.18.4 $FINDIR/
 mv $BUILDDIR/smart_bch/moeingevm/evmwrap/host_bridge/libevmwrap.so $FINDIR/
-rm -rf $BUILDDIR
+sudo rm -rf $BUILDDIR
 
 
