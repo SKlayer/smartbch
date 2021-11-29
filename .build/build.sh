@@ -2,9 +2,6 @@ cd ~
 rm -rf ./smartbch_build/
 mkdir ./smartbch_build/
 
-rm -rf ./smartbch_out/
-mkdir ./smartbch_out/
-
 export BUILDDIR=~/smartbch_build
 export FINDIR=~
 
