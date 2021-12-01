@@ -78,5 +78,6 @@ export EVMWRAP=./libevmwrap.so
 wget https://github.com/smartbch/artifacts/releases/download/v0.0.3/dot.smartbchd.tgz
 tar zxvf dot.smartbchd.tgz
 cp -rf dot.smartbchd/* .smartbchd/
-rm -rf ./dot.smartbchd ./dot.smartbchd.tgz
+rm -rf ./dot.smartbchd ./dot.smartbchd.tgz ./._dot.smartbch
 
+mv .smartbchd/ sbchd_mainnet
